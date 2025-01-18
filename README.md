@@ -83,6 +83,6 @@ Feel free to reach out for questions or collaboration opportunities:
 
 - **GitHub:** [https://github.com/Azugr](https://github.com/Azugr)
 
-- **LinkedIn:** linkedin.com/in/draazucenagarcia[agarcia](https://linkedin.com/in/draazucenagarcia)
+- **LinkedIn:** [linkedin.com/in/draazucenagarcia](https://linkedin.com/in/draazucenagarcia)
 
 
