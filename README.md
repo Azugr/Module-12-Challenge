@@ -1,8 +1,8 @@
-# React Portfolio
+Azu's Portfolio
 
-## Description
+Description
 
-The **React Portfolio** is a dynamic single-page application designed to showcase projects, skills, and contact information for potential employers and collaborators. Built using React, it highlights your ability to create modern web applications with responsive design and intuitive navigation. Deployed on Netlify, this portfolio is a professional way to demonstrate your work and expertise in web development.
+The Azu's Portfolio is a dynamic single-page application designed to showcase projects, skills, and contact information for potential employers and collaborators. Built using React, it highlights your ability to create modern web applications with responsive design and intuitive navigation. Deployed on Netlify, this portfolio is a professional way to demonstrate your work and expertise in web development.
 
 ## Table of Contents
 
