@@ -1,0 +1,18 @@
+.footer {
+  background-color: #1a2b4c; /* Deep blue */
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.icon {
+  width: 40px; /* Icon size */
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Hover effect */
+}
+  

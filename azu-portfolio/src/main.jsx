@@ -15,31 +15,43 @@ import App from './App.jsx';
 import Error from "./pages/Error.jsx";
 
 // Define the accessible routes, and which components respond to which URL
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      errorElement: <Error />,
+      children: [
+        {
+          index: true,
+          element: <AboutMe />,
+        },
+        {
+          path: '/aboutme',
+          element: <AboutMe />,
+        },
+        {
+          path: '/contact',
+          element: <Contact />,
+        },
+        {
+          path: '/portfolio',
+          element: <Portfolio />,
+        },
+        {
+          path: '/resume',
+          element: <Resume />,
+        },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <App />,
-    errorElement: <Error />,
-    children: [
-      {
-        index: true,
-        element: <AboutMe />,
-      },
-      {
-        path: '/Contact',
-        element: <Contact />,
-      },
-      {
-        path: '/Portfolio',
-        element: <Portfolio />,
-      },
-      {
-        path: '/Resume',
-        element: <Resume />,
-      },
-    ],
-  },
-]);
+    future: {
+      v7_startTransition: true,
+      v7_relativeSplatPath: true,
+    },
+  }
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />

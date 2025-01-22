@@ -1,48 +1,109 @@
+/* Root container styling */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Light background for a clean look */
+  color: #333; /* Text color */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Navbar container styling */
+.navbar {
+  background-color: #1a2b4c; /* Deep blue */
+  padding: 1em;
+  display: flex;
+  justify-content: space-between; /* Branding on the left, links on the right */
+  align-items: center; /* Center items vertically */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Branding (Portfolio title) styling */
+.navbar .branding {
+  font-size: 2.5em; /* Larger font size */
+  font-family: 'Dancing Script', cursive; /* Artistic cursive font */
+  color: #ffffff; /* White text */
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Navigation links styling */
+.navbar .nav-links {
+  display: flex; /* Use Flexbox for links */
+  gap: 1.5em; /* Add spacing between links */
+  margin-left: auto; /* Push links to the right */
 }
 
-.card {
+.navbar a {
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2em; /* Normal font size for links */
+  font-weight: normal;
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #61dafb; /* React-like hover color */
+}
+
+/* Content container styling */
+section {
+  margin: 2em 0; /* Add spacing between sections */
+  text-align: left;
+  background-color: white;
   padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.read-the-docs {
-  color: #888;
+/* Icon styling */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Space between icons */
+  margin-top: 1.5rem;
 }
 
 .icon {
-  width: 32px; 
-  height: 32px; 
-  margin: 0 10px; 
+  width: 40px; /* Icon size */
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Hover effect */
+}
+
+/* Footer styling */
+footer {
+  background-color: #1a2b4c; /* Deep blue */
+  color: white;
+  padding: 1em;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items */
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 1em; /* Space between branding and links */
+  }
+
+  .nav-links a {
+    font-size: 1em; /* Smaller links on mobile */
+  }
 }
