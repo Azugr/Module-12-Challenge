@@ -50,7 +50,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <p>
+      <p className="light_blue">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
         tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
         impedit suscipit sed magnam alias in, repellat expedita hic explicabo
