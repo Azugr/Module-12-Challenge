@@ -1,13 +1,13 @@
 .footer {
   background-color: #1a2b4c; /* Deep blue */
   color: white;
-  padding: 1em;
+  padding: 3em;
   text-align: center;
 }
 
 .icon {
-  width: 40px; /* Icon size */
-  height: 40px;
+  width: 100px; /* Icon size */
+  height: 100px;
   margin: 0 10px;
   transition: transform 0.3s ease-in-out;
 }

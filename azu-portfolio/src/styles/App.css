@@ -2,8 +2,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0rem;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5; /* Light background for a clean look */
   color: #333; /* Text color */
@@ -15,7 +14,7 @@
   padding: 1em;
   display: flex;
   justify-content: space-between; /* Branding on the left, links on the right */
-  align-items: center; /* Center items vertically */
+  align-items: left; 
 }
 
 /* Branding (Portfolio title) styling */
@@ -23,14 +22,20 @@
   font-size: 2.5em; /* Larger font size */
   font-family: 'Dancing Script', cursive; /* Artistic cursive font */
   color: #ffffff; /* White text */
-  font-weight: bold;
+  text-align: start;
+  margin: 2rem;
 }
 
 /* Navigation links styling */
-.navbar .nav-links {
-  display: flex; /* Use Flexbox for links */
-  gap: 1.5em; /* Add spacing between links */
-  margin-left: auto; /* Push links to the right */
+.navbar .nav-links .nav-link {
+  font-size: 1.2em; /* Adjust font size */
+  color: #ffffff; /* White text */
+  margin-left: 0; /* Spacing between links */
+}
+
+.navbar .nav-links .nav-link:hover {
+  text-decoration: underline; /* Optional hover effect */
+  color: #61dafb; /* React-like hover color */
 }
 
 .navbar a {
@@ -38,6 +43,8 @@
   text-decoration: none; /* Remove underline */
   font-size: 1.2em; /* Normal font size for links */
   font-weight: normal;
+  margin-right: 2rem;
+  margin-left: 5rem;
 }
 
 .navbar a:hover {
@@ -60,8 +67,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px; /* Space between icons */
+  gap: 100px; /* Space between icons */
   margin-top: 1.5rem;
+  padding: 2em;
 }
 
 .icon {
