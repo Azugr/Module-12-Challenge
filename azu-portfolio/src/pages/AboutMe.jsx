@@ -19,7 +19,7 @@ export default function AboutPage() {
           <div className="col-md-9">
             <h2 className="fw-bold">About Me</h2>
             <p className="lead text-justify">
-              I am a dedicated nephrologist with over 20 years of experience in the medical field. I hold a master's degree in health administration and have extensive experience in healthcare project management and strategic planning. My passion lies in improving patient care through innovative digital solutions.
+              I am a dedicated Nephrologist with over 20 years of experience in the medical field. I hold a master's degree in health administration and have extensive experience in healthcare project management and strategic planning. My passion lies in improving patient care through innovative digital solutions.
             </p>
           </div>
         </div>
@@ -32,26 +32,30 @@ export default function AboutPage() {
             <div className="features-icons-item mx-auto">
               <i className="bi bi-window text-primary display-4"></i>
               <h3 className="fw-bold mt-2">Medical Expertise & Leadership</h3>
-              <p className="lead text-justify">
-                20+ years as a nephrologist with a master's in health administration. Experience in healthcare project management & strategic planning. Passionate about improving patient care through digital solutions.
+              <p className="text-muted">
+                20+ years as a Nephrologist with a master's in health administration. Experience in healthcare project management & strategic planning. 
               </p>
             </div>
           </div>
           <div className="col-lg-4">
             <div className="features-icons-item mx-auto">
               <i className="bi bi-layers text-primary display-4"></i>
-              <h3 className="fw-bold mt-2">Bootstrap 5 Ready</h3>
+              <h3 className="fw-bold mt-2">Tech Transition & Development</h3>
               <p className="text-muted">
-                Featuring the latest build of the new Bootstrap 5 framework!
+              Developing expertise to merge healthcare and technology into innovative digital solutions: 
+                  JavaScript
+                  React 
+                  Node.js
+                  Git 
               </p>
             </div>
           </div>
           <div className="col-lg-4">
             <div className="features-icons-item mx-auto">
               <i className="bi bi-terminal text-primary display-4"></i>
-              <h3 className="fw-bold mt-2">Easy to Use</h3>
+              <h3 className="fw-bold mt-2">Vision & Future Goals</h3>
               <p className="text-muted">
-                Ready to use with your own content, or customize the source files!
+              Passionate about improving patient care and healthcare accessibility through digital transformation and software solutions.
               </p>
             </div>
           </div>
