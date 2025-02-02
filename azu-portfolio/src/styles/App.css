@@ -2,7 +2,8 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0rem;
+  padding: 2rem;
+  text-align: center;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5; /* Light background for a clean look */
   color: #333; /* Text color */
@@ -10,45 +11,38 @@
 
 /* Navbar container styling */
 .navbar {
-  background-color: #1a2b4c; /* Deep blue */
+  background-color: #1a2b4c; /* Deep blue, same as footer */
   padding: 1em;
   display: flex;
   justify-content: space-between; /* Branding on the left, links on the right */
-  align-items: left; 
+  align-items: center; /* Center items vertically */
 }
 
 /* Branding (Portfolio title) styling */
 .navbar .branding {
-  font-size: 2.5em; /* Larger font size */
-  font-family: 'Dancing Script', cursive; /* Artistic cursive font */
-  color: #ffffff; /* White text */
-  text-align: start;
-  margin: 2rem;
+  font-size: 2.5em;
+  font-family: 'Dancing Script', cursive;
+  color: #ffffff;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Navigation links styling */
-.navbar .nav-links .nav-link {
+.navbar .nav-links {
+  display: flex; /* Use Flexbox for links */
+  gap: 1.5em; /* Add spacing between links */
+  margin-left: auto; /* Push links to the right */
+}
+
+.navbar .nav-link {
   font-size: 1.2em; /* Adjust font size */
   color: #ffffff; /* White text */
-  margin-left: 0; /* Spacing between links */
+  margin-left: 1em; /* Spacing between links */
 }
 
-.navbar .nav-links .nav-link:hover {
+.navbar .nav-link:hover {
   text-decoration: underline; /* Optional hover effect */
-  color: #61dafb; /* React-like hover color */
-}
-
-.navbar a {
-  color: white; /* White text */
-  text-decoration: none; /* Remove underline */
-  font-size: 1.2em; /* Normal font size for links */
-  font-weight: normal;
-  margin-right: 2rem;
-  margin-left: 5rem;
-}
-
-.navbar a:hover {
-  text-decoration: underline; /* Underline on hover */
   color: #61dafb; /* React-like hover color */
 }
 
@@ -67,9 +61,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px; /* Space between icons */
+  gap: 40px; /* Space between icons */
   margin-top: 1.5rem;
-  padding: 2em;
 }
 
 .icon {
@@ -101,17 +94,36 @@ footer a:hover {
 }
 
 /* Responsive design */
+/* 📱 Mobile Optimization - Allow Text to Wrap */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Stack navbar items */
-    align-items: flex-start;
+  .navbar .branding {
+    font-size: 1.8em; /* Reduce font size */
+    text-align: center;
+    white-space: normal; /* Allows text to take the next line */
+    display: block;
+    word-break: break-word;
+    max-width: 100%; /* Ensures it fits within the container */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .branding {
+    font-size: 1.5em;
+    padding: 5px;
+    text-align: center;
+    white-space: normal; /* Prevents text from disappearing */
+    word-break: break-word; /* Allows wrapping */
   }
 
+/* Fix Navbar Toggle Button */
+.navbar-toggler {
+  margin-left: auto;
+}
   .nav-links {
     margin-top: 1em; /* Space between branding and links */
   }
 
-  .nav-links a {
+  .nav-links .nav-link {
     font-size: 1em; /* Smaller links on mobile */
   }
 }

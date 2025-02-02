@@ -7,13 +7,16 @@ import Portfolio from './pages/Portfolio.jsx';
 import Resume from './pages/Resume.jsx';
 import App from './App.jsx';
 import Error from "./pages/Error.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+
 
 // Define the routes and components
 const router = createBrowserRouter(
   [
     {
       path: '/',
-      element: <App />, // App includes NavBar and Footer
+      element: <App />, 
       errorElement: <Error />,
       children: [
         {
