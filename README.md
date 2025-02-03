@@ -59,9 +59,9 @@ The Azu's Portfolio is a dynamic single-page application designed to showcase pr
 - **Footer:**
   - Includes links to GitHub, LinkedIn, and a third platform (e.g., Stack Overflow or Twitter).
 
-## Screenshots
+## Walkthrough video
+https://drive.google.com/file/d/1u_tPB692RPX4DC3xLsWfmYuovnht4c5b/view
 
-*Include screenshots or a GIF showcasing the application functionality.*
 
 ## Technologies Used
 
@@ -73,7 +73,7 @@ The Azu's Portfolio is a dynamic single-page application designed to showcase pr
 
 ## Deployed Application
 
-The live application is available at: [Netlify Deployment Link](insert-your-netlify-link)
+The live application is available at: [Netlify Deployment Link](https://guileless-squirrel-5b391d.netlify.app/)
 
 ## Contact
 
