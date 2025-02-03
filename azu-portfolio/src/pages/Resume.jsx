@@ -1,6 +1,6 @@
 import React from "react";
-import { FaFilePdf } from "react-icons/fa";
-import resumePDF from "../assets/resume/Maria_Azucena_Garcia_Resume.pdf"; // Import PDF
+import { FaFilePdf } from 'react-icons/fa'; 
+import resumePDF from "../assets/resume/Maria_Azucena_Garcia_Resume.pdf"; 
 import "../styles/resume.css";
 
 const Resume = () => {
@@ -32,4 +32,5 @@ const Resume = () => {
 };
 
 export default Resume;
+
 
